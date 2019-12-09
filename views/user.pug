@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p #{content}
+  form(method="post")
+
+    input(type="text" name="name")
+    br
+    |
+    input(type="text" name="email")
+    br
+    |
+    input(type="text" name="password")
+    button(type="submit") 投稿
